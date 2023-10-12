@@ -1,0 +1,412 @@
+/* Color variables */
+:root {
+    --white-color: #797575;
+    --bg-color: #5f5d5d;
+    --gray-color: #837e7e;
+    background-color: #b3b0b062 !important;
+  }
+  
+  /* Changing background color 
+  body {
+    background: var(--bg-color) !important;
+  }*/
+  
+  /* Changing link color */
+  .nav-item .nav-link {
+    color: var(--white-color);
+  }
+  
+  /* Hero section background image */
+  .hero {
+    height: 100vh;
+    background-image: url("../images/home-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #skills i {
+    height: 100px;
+    width: 100px;
+  }
+  
+  #portfolio img {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  #about .img,
+  #about img,
+  .hire-text h2 {
+    position: relative;
+  }
+  
+  /* Timeline background line */
+  #about .img::before {
+    content: "";
+    left: 50%;
+    width: 4px;
+    position: absolute;
+    height: calc(100% + 140px);
+    background: var(--gray-color);
+  }
+  
+  #about img,
+  #about .hire-text h2 {
+    width: 140px;
+  }
+  
+  #about .hire-text h2 {
+    height: 200px;
+  }
+  
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+  }
+  
+  footer .social-icons a {
+    width: 30px;
+    height: 30px;
+  }
+  
+  #cv img {
+    width: 230px;
+  }
+  
+  /* Contact section background image */
+  #contact {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("../images/contact-bg.jpeg");
+  }
+  
+  @media screen and (max-width: 990px) {
+    #skills .card {
+      width: calc(100% / 2 - 10px) !important;
+    }
+  }
+  
+  @media screen and (max-width: 668px) {
+    #skills .card,
+    #portfolio .card-wrapper {
+      width: 100% !important;
+    }
+   #about .hire-text h2 {
+     height: 70px;
+     width: 70px;
+   }
+  }
+
+  body {
+    background-color: #b3b0b062 !important; /* Light grey background color */
+   
+  }
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website | CodingNepal</title>
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fontawesome link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Header & Navbar -->
+    <header class="bg-dark fixed-top">
+      <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
+        <div class="container-fluid">
+          <img src="C:\Users\vmanda\Desktop\medicalSummit\_tests_\sujTask\IMG_8809.jpg" class="img-fluid" alt="portfolio-img"><br/>
+
+          <a class="navbar-brand fw-bold fs-3" href="#">Sai Sujith</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#skills">SKILLS</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#about">ABOUT</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#cv">CURRICULUM VITAE</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero or Showcase Section -->
+    <section class="hero d-flex flex-column align-items-center justify-content-center">
+        <div class="heros">
+      <div class="text-center">
+        <h1 class="h1 text-black fw-medium fst-italic">Sai Sujith</h1><br/><br/><br/>
+        <h2 class="display-3 text-black fw-bold">Internet of Things (IoT)<br /> student</h2>
+        <a href="#skills" class="btn btn-lg fs-6 fw-medium mt-5 btn-primary p-3">TELL ME MORE</a>
+      </div>
+      </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section class="container py-5" id="skills">
+      <div class="row mt-4 py-3">
+        <div class="col-12 d-flex flex-column text-center justify-content-center">
+          <h2>SKILLS</h2>
+          <h5 class="text-secondary fw-normal py-2 fst-italic">Continuously improving my skills and knowledge in the field.</h5>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-between mx-0">
+        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
+          <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-cart-shopping"></i>
+          <h3 class="mt-4 h4">Front-end Development</h3>
+          <p class="text-center">Proficient in HTML, CSS, and JavaScript. Experienced in responsive web design, building user-friendly interfaces, and using modern frameworks like ReactJS.</p>
+        </div>
+        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
+          <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-laptop"></i>
+          <h3 class="mt-4 h4">Back-end Development</h3>
+          <p class="text-center">Skilled in server-side programming using technologies like Node.js and Express. Experience working with databases such as MongoDB and MySQL.</p>
+        </div>
+        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
+          <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-mobile-screen-button"></i>
+          <h3 class="mt-4 h4">Mobile App Development</h3>
+          <p class="text-center">Proficient in developing mobile apps for iOS and Android using frameworks like React Native. Experienced in building engaging and intuitive mobile user interfaces.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="container py-5" id="portfolio">
+      <div class="row mt-4 py-3">
+        <div class="col-12 d-flex flex-column text-center justify-content-center">
+          <h2>PORTFOLIO</h2>
+          <h5 class="text-secondary fw-normal py-2 fst-italic">A collection of projects I've worked on.</h5>
+        </div>
+        <div class="row mt-5 mx-0 justify-content-center align-items-center">
+          <div class="col-lg-3 px-md-3 px-0 col-md-4 col-12 card-wrapper">
+            <div class="card mt-4">
+              <img src="C:\Users\vmanda\Desktop\medicalSummit\_tests_\sujTask\ecommerce.jpg" class="img-fluid" alt="portfolio-img">
+              <div class="card-body text-center">
+                <h6 class="card-title">E-commerce Website</h6>
+                <p class="card-text text-secondary">HTML/CSS/JavaScript</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
+            <div class="card mt-4">
+              <img src="C:\Users\vmanda\Desktop\medicalSummit\_tests_\sujTask\responsive.jpg" class="img-fluid" alt="portfolio-img">
+              <div class="card-body text-center">
+                <h6 class="card-title">Responsive Landing Page</h6>
+                <p class="card-text text-secondary">HTML/CSS/Bootstrap</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
+            <div class="card mt-4">
+              <img src="C:\Users\vmanda\Desktop\medicalSummit\_tests_\sujTask\calculator-app.jpg" class="img-fluid" alt="portfolio-img">
+              <div class="card-body text-center">
+                <h6 class="card-title">Calculator App</h6>
+                <p class="card-text text-secondary">HTML/CSS/JavaScript</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
+            <div class="card mt-4">
+              <img src="C:\Users\vmanda\Desktop\medicalSummit\_tests_\sujTask\blog.jpg" class="img-fluid" alt="portfolio-img">
+              <div class="card-body text-center">
+                <h6 class="card-title">Blog Website</h6>
+                <p class="card-text text-secondary">HTML/CSS/PHP</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
+            <div class="card mt-4">
+              <img src="C:\Users\vmanda\Desktop\medicalSummit\_tests_\sujTask\react.jpg" class="img-fluid" alt="portfolio-img">
+              <div class="card-body text-center">
+                <h6 class="card-title">Data Visualization</h6>
+                <p class="card-text text-secondary">Python</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>      
+    </section>
+
+    <!-- About Section -->
+    <section class="container py-5" id="about">
+      <div class="row mt-4 py-3">
+        <div class="col-12 d-flex flex-column text-center">
+          <h2>ABOUT</h2>
+          <h5 class="text-secondary fw-normal py-2 fst-italic">Learn more about me, my background, and what motivates me.</h5>
+        </div>
+      </div>
+      <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
+        <div class="col-9 col-md-5 text-md-end">
+          <h5>2018-2020</h5>
+          <h5>Early Passion for Technology</h5>
+          <p>From an early age, I became fascinated with computers and programming. Starting with basic HTML and CSS, I gradually expanded my skills to include JavaScript and various frameworks.</p>
+        </div>
+        <div class="col-3 col-md-2 img text-center">
+          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="C:\Users\vmanda\Desktop\medicalSummit\_tests_\sujTask\about-img-1.jpg" alt="img">
+        </div>
+      </div>
+      <div class="row justify-content-md-end mt-5 pt-5">
+        <div class="col-3 col-md-2 img text-center">
+          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="C:\Users\vmanda\Desktop\medicalSummit\_tests_\sujTask\about-img-2.jpg" alt="img">
+        </div>
+        <div class="col-9 col-md-5">
+          <h5>2018-2020</h5>
+          <h5>Higher Education and Career Growth</h5>
+          <p>During my university years, I studied computer science and gained hands-on experience through internships and freelance projects. This period fueled my passion for creating innovative solutions and solving complex problems.</p>
+        </div>
+      </div>
+      <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
+        <div class="col-9 col-md-5 text-md-end">
+          <h5>2020-Present</h5>
+          <h5>Professional Excellence and Continuous Learning</h5>
+          <p>Throughout my career, I have consistently sought opportunities to refine my skills and stay updated with the latest technologies. I strive for excellence in every project I undertake and aim to deliver valuable and impactful results.</p>
+        </div>
+        <div class="col-3 col-md-2 img text-center">
+          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="C:\Users\vmanda\Desktop\medicalSummit\_tests_\sujTask\about-img-3.jpg" alt="img">
+        </div>
+      </div>
+      <div class="row justify-content-md-end mt-5 pt-5">
+        <div class="col-3 col-md-2 img text-center">
+          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="C:\Users\vmanda\Desktop\medicalSummit\_tests_\sujTask\about-img-4.jpg" alt="img">
+        </div>
+        <div class="col-9 col-md-5">
+          <h5>Future</h5>
+          <h5>Continuing to Make a Difference</h5>
+          <p>I am committed to leveraging my skills and expertise to contribute to meaningful projects that have a positive impact on society. I am eager to take on new challenges and collaborate with talented individuals to create innovative solutions.</p>
+        </div>
+      </div>
+      <div class="row justify-content-md-center mt-5 pt-5">
+        <div class="col-3 col-md-2 d-flex justify-content-center hire-text">
+          <h2 class="h4 d-flex justify-content-center align-items-center bg-primary text-white rounded-circle border border-8 border-dark-subtle"><span class="d-none d-md-block">Your<br/>Next<br/>Hire</span></h2>
+        </div>
+      </div>      
+    </section>
+
+    <!-- Curriculum Vitae Section -->
+    <section class="container py-5" id="cv">
+      <div class="row mt-4 py-3">
+        <div class="col-12 d-flex flex-column text-center">
+          <h2>CURRICULUM VITAE</h2>
+          <h5 class="text-secondary fw-normal py-2 fst-italic">A small sampling of some of the projects I've worked on as a student of the ICS program.</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 mt-5 order-lg-0 order-1 text-center">
+          <img class="img-fluid rounded-circle border border-5 border-dark-subtle" src="C:\Users\vmanda\Desktop\medicalSummit\_tests_\sujTask\IMG_8809.jpg" alt="profile-img">
+          <h2 class="mt-3">Sai Sujith</h2>
+          <ul class="list-unstyled contact-info">
+            <li><i class="fas fa-envelope me-2"></i> saisujith1277@gmail.com</li>
+            <li><i class="fas fa-phone me-2"></i>8897332340</li>
+            <li><i class="fas fa-map-marker-alt me-2"></i> College Road,, Mancherial
+            Pincode 504208</li>
+          </ul>
+          <ul class="social-icons my-5 d-flex justify-content-center">
+            <a href="#" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
+          </ul>
+          <h5>Technical Skills</h5>
+          <ul class="list-unstyled">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript,C, Java,python</li>
+            <!-- Add or remove skills as needed -->
+          </ul>
+          <h5>Hobbies</h5>
+          <ul class="list-unstyled">
+            <li>Playing cricket</li>
+            <li>Listening to music</li>
+            <li>Travelling</li>
+            <!-- Add or remove interests as needed -->
+          </ul>
+        </div>
+        <div class="col-lg-7 order-lg-1 order-0 mt-5 text-start">
+          <h3>CAREER OBJECTIVE</h3>
+          <hr>
+          <p>To obtain a challenging position as a Software Engineer in a leading multi-national
+            organization where I can use my qualifications and skills to prove my abilities.</p>
+          <h3>Highlights of Qualifications</h3>
+          <hr>
+          <ul>
+            <li>B. Tech</li>
+            <li>Intermediate</li>
+            <li>S.S.C</li>
+            <!-- Add or remove qualifications as needed -->
+          </ul>
+          <h3>Education</h3>
+          <hr>
+          <dl>
+            <dt>2020 - 2024</dt>
+            <dd>ACE College of
+              Engineering,
+              Hyderabad</dd>
+            <dd>Computer
+              Science and
+              Engg.</dd>
+          </dl>
+          
+          <h3>SKILLS</h3>
+          <hr>
+          <dl>
+            <dd>- Proficient in programming languages: Python, C++, Java<br/>
+              - Experience with IoT platforms: Arduino, Raspberry Pi, ESP8266, MQTT<br/>
+              - Solid understanding of sensor integration and data acquisition techniques<br/>
+              - Cloud computing and data storage: AWS, Azure, Google Cloud<br/>
+              - Familiarity with wireless communication protocols: Bluetooth, Wi-Fi,
+              Zigbee<br/>
+              - Data analysis and visualization tools: MATLAB, Tableau<br/>
+              - Strong problem-solving and analytical skills<br/>
+              - Effective communication and collaboration in cross-functional teams</dd>
+            
+          </dl>
+        </div>
+      </div>      
+    </section>
+
+     <!-- Contact Section -->
+     <section class="py-5" id="contact">
+      <div class="container-xxl py-5">
+        <div class="col-12 d-flex flex-column text-center justify-content-center">
+          <h2 class="text-black"> CONTACT ME </h2>
+          <h5 class="text-black fw-normal py-2 fst-italic">Interested if I'd be the right fit for your team? Fill in this form and I will respond within 24-48 hours.</h5>
+        </div>
+        <div class="row pt-4 mt-5">
+          <div class="col-12">
+            <form action="#" method="POST">
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-6">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Enter Name*" required>
+                    <label for="floatingInput">Enter Name*</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="Enter Email*" required>
+                    <label for="floatingEmail">Enter Email*</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingPassword" placeholder="Enter Phone*" required>
+                    <label for="floatingPassword">Enter Phone*</label>
+                  </div>
